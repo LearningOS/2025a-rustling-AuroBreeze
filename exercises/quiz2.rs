@@ -22,6 +22,7 @@
 
 // I AM NOT DONE
 
+use std::vec;
 pub enum Command {
     Uppercase,
     Trim,
@@ -32,9 +33,9 @@ mod my_module {
     use super::Command;
 
     // TODO: Complete the function signature!
-    pub fn transformer(input: ???) -> ??? {
+    pub fn transformer(input: vec![(String, Command)]) -> (String, Command) {
         // TODO: Complete the output declaration!
-        let mut output: ??? = vec![];
+        let mut output: vec![(String, Command)] = vec![];
         for (string, command) in input.iter() {
             // TODO: Complete the function body. You can do it!
         }
